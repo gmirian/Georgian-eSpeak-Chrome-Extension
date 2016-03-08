@@ -1,0 +1,53 @@
+<html>
+<head><title>Options</title></head>
+<body>
+<style>
+#wrapper
+{
+	width:100%;
+	text-align:center;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+.opt
+{
+	width:100%;
+	padding:10px;
+}
+label
+{
+	padding:0 5px 0 0;
+}
+select
+{
+	width:124px;
+}
+</style>
+<div id="wrapper">
+<img src="images/icon128.png">
+
+
+ <div class="opt">
+        <label for="pitch">Pitch</label><input id="pitch" type="range" value="50" min="0" max="100">
+</div>
+      <div class="opt">
+        <label for="rate">Rate</label><input id="rate" type="range" value="175" min="80" max="450">
+      </div>
+      
+   
+      <div class="opt">
+        <label for="voice">Voice</label><select id="voice">
+          <option value="m6" selected>Male</option>
+          <option value="f5">Female</option>
+        </select>
+      </div>
+
+    <button id="save">Save</button>
+    <button id="reset">Reset</button>
+
+
+</div>
+
+
+</body>
+<script src="js/options.js"></script>
+</html>
